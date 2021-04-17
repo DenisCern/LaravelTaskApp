@@ -17,6 +17,7 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [MainController::class, 'home'])->name('home');
+Route::get('/home', [MainController::class, 'home'])->name('home');
 Route::post('/addTask', [MainController::class, 'addTask']);
 Route::post('/changeTask', [MainController::class, 'changeTask']);
 
